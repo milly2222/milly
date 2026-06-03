@@ -26,7 +26,11 @@
 
         body {
             background-color: var(--cream);
-            background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+            /* Aggiornamento: Sfondo personalizzato con pattern di animali kawaii */
+            background-image: url('image_0.png');
+            background-size: 200px 200px; /* Regola la dimensione del pattern se necessario */
+            background-repeat: repeat; /* Il pattern si ripeterà senza interruzioni */
+            background-position: top left;
             margin: 0;
             padding: 20px;
             color: #555;
@@ -397,7 +401,7 @@
         function renderDay(container) {
             let html = `
                 <div class="card">
-                    <div class="view-title"><h2>✨ Programma di Oggi</h2> <div style="font-size:2rem">🕒</div></div>
+                    <div class="view-title"><h2>Programma di Oggi</h2> <div style="font-size:2rem">🕒</div></div>
                     <div class="hours-list">`;
             
             // Ciclo per generare le ore del giorno dalle 07:00 alle 21:00
