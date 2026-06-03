@@ -139,4 +139,137 @@
         <h1>Il Mio Planner Organizzativo</h1>
         <div class="navigation">
             <button class="btn" onclick="alert('Funzione Giorno in arrivo!')">Giornata</button>
-            <button class="btn" onclick="alert('Vista
+            <button class="btn" onclick="alert('Vista Settimanale Attiva')">Settimana</button>
+            <button class="btn" onclick="alert('Funzione Mese in arrivo!')">Mese</button>
+            <button class="btn" onclick="alert('Funzione Anno in arrivo!')">Anno</button>
+        </div>
+    </header>
+
+    <div class="week-container">
+        
+        <div class="day-card" id="lunedi">
+            <div class="day-header">
+                <h3 class="day-title">Lunedì</h3>
+                <div class="color-picker-wrapper">
+                    <input type="color" value="#ffffff" onchange="changeColor('lunedi', this.value)">
+                </div>
+            </div>
+            <div class="hours-list">
+                <div class="hour-row"><span class="hour-label">08:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">10:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">12:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">14:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">16:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">18:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+            </div>
+        </div>
+
+        <div class="day-card" id="martedi">
+            <div class="day-header">
+                <h3 class="day-title">Martedì</h3>
+                <div class="color-picker-wrapper">
+                    <input type="color" value="#ffffff" onchange="changeColor('martedi', this.value)">
+                </div>
+            </div>
+            <div class="hours-list">
+                <div class="hour-row"><span class="hour-label">08:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">10:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">12:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">14:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">16:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">18:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+            </div>
+        </div>
+
+        <div class="day-card" id="mercoledi">
+            <div class="day-header">
+                <h3 class="day-title">Mercoledì</h3>
+                <div class="color-picker-wrapper">
+                    <input type="color" value="#ffffff" onchange="changeColor('mercoledi', this.value)">
+                </div>
+            </div>
+            <div class="hours-list">
+                <div class="hour-row"><span class="hour-label">08:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">10:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">12:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">14:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">16:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">18:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+            </div>
+        </div>
+
+        <div class="day-card" id="giovedi">
+            <div class="day-header">
+                <h3 class="day-title">Giovedì</h3>
+                <div class="color-picker-wrapper">
+                    <input type="color" value="#ffffff" onchange="changeColor('giovedi', this.value)">
+                </div>
+            </div>
+            <div class="hours-list">
+                <div class="hour-row"><span class="hour-label">08:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">10:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">12:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">14:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">16:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">18:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+            </div>
+        </div>
+
+        <div class="day-card" id="venerdi">
+            <div class="day-header">
+                <h3 class="day-title">Venerdì</h3>
+                <div class="color-picker-wrapper">
+                    <input type="color" value="#ffffff" onchange="changeColor('venerdi', this.value)">
+                </div>
+            </div>
+            <div class="hours-list">
+                <div class="hour-row"><span class="hour-label">08:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">10:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">12:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">14:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">16:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">18:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+            </div>
+        </div>
+
+        <div class="day-card" id="sabato">
+            <div class="day-header">
+                <h3 class="day-title">Sabato</h3>
+                <div class="color-picker-wrapper">
+                    <input type="color" value="#ffffff" onchange="changeColor('sabato', this.value)">
+                </div>
+            </div>
+            <div class="hours-list">
+                <div class="hour-row"><span class="hour-label">09:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">11:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">15:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">18:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+            </div>
+        </div>
+
+        <div class="day-card" id="domenica">
+            <div class="day-header">
+                <h3 class="day-title">Domenica</h3>
+                <div class="color-picker-wrapper">
+                    <input type="color" value="#ffffff" onchange="changeColor('domenica', this.value)">
+                </div>
+            </div>
+            <div class="hours-list">
+                <div class="hour-row"><span class="hour-label">10:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+                <div class="hour-row"><span class="hour-label">16:00</span><input type="text" class="task-input" placeholder="Impegno..."></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Funzione per cambiare il colore di sfondo della casella del giorno
+        function changeColor(dayId, colorValue) {
+            const dayCard = document.getElementById(dayId);
+            if (dayCard) {
+                dayCard.style.backgroundColor = colorValue;
+            }
+        }
+    </script>
+</body>
+</html>
